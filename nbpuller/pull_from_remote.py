@@ -100,7 +100,7 @@ def pull_from_remote(**kwargs):
             'proceed_url': config['ERROR_REDIRECT_URL']
         })
     if domain == config['GITHUB_DOMAIN']:
-        if account not in config['ALLOWED_GITHUB_ACCOUNTS']:
+        if False: #account not in config['ALLOWED_GITHUB_ACCOUNTS']:
             return messages.error({
                 'message': "Specified github account " + account + " is not allowed.",
                 'proceed_url': config['ERROR_REDIRECT_URL']
