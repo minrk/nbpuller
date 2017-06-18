@@ -55,7 +55,7 @@ class Config(object):
         'ALLOWED_GITHUB_ACCOUNTS', default=DEFAULT_GITHUB_ACCOUNT).split(DELIMITER)
 
     # The branch that will be pulled in
-    DEFAULT_BRANCH_NAME = 'gh-pages'
+    DEFAULT_BRANCH_NAME = 'master'
 
     # Timeout for authentication token retrieval. Used when checking if
     # notebook exists under user's account
